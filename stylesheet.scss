@@ -64,6 +64,7 @@ a {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    overflow: hidden;
     p {
       margin-bottom: 55px;
     }
@@ -96,5 +97,41 @@ a {
     margin-right: 20px;
     text-align: center;
     color: white;
+  }
+}
+
+.reviews {
+  &-wrapper {
+    background-color: #fff;
+    padding: 55px 165px 45px 165px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__items-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+  &__item {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    max-width: 190px;
+    min-height: 220px;
+    font-size: 14px;
+    margin: 0;
   }
 }
