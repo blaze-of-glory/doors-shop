@@ -9,24 +9,24 @@
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="container header__wrapper">
         <nav class="header__navigation">
             <ul>
                 <li class="header__navigation_item">
-                    <a href="#">Входные двери</a>
+                    <a href="#doors1">Входные двери</a>
                 </li>
                 <li class="header__navigation_item">
-                    <a href="#">Межкомнатные двери</a>
+                    <a href="#doors2">Межкомнатные двери</a>
                 </li>
                 <li class="header__navigation_item">
-                    <a href="#">Балконные двери</a>
+                    <a href="#doors3">Балконные двери</a>
                 </li>
                 <li class="header__navigation_item">
-                    <a href="#">Отзывы</a>
+                    <a href="#reviews">Отзывы</a>
                 </li>
                 <li class="header__navigation_item">
-                    <a href="#">Заказать звонок</a>
+                    <a href="#callback">Заказать звонок</a>
                 </li>
             </ul>
         </nav>
@@ -62,7 +62,7 @@
 </section>
 <section class="promo">
     <div class="container-md">
-        <div class="promo__item">
+        <div class="promo__item" id="doors1">
             <div class="promo__text-block">
                 <h1>Входные двери</h1>
                 <p>Не просто преграда между вашим домом и внешним миром, это еще и «лицо» вашего жилища, которое задает
@@ -87,7 +87,7 @@
                 <img src="assets/promo-1.svg" alt="promo-image-1">
             </div>
         </div>
-        <div class="promo__item reverse">
+        <div class="promo__item reverse" id="doors2">
             <div class="promo__text-block">
                 <h1>Межкомнатные
                     двери
@@ -113,7 +113,7 @@
                 <img src="assets/promo-2.svg" alt="promo-image-2">
             </div>
         </div>
-        <div class="promo__item">
+        <div class="promo__item" id="doors3">
             <div class="promo__text-block">
                 <h1>Балконные двери</h1>
                 <p>При любом варианте использования балкона, правильно оформленная балконная дверь играет очень важную
@@ -140,7 +140,7 @@
         </div>
     </div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="container-md">
         <div class="reviews-wrapper">
             <h2 class="reviews__title">Отзывы</h2>
@@ -205,7 +205,7 @@
         </div>
     </div>
 </section>
-<section class="callback">
+<section class="callback" id="callback">
     <div class="container-md">
         <div class="callback__wrapper">
             <div class="callback__map-wrapper">
@@ -267,7 +267,15 @@
                 <div class="footer__column-item">
                    <div>Мы в соцсетях:</div>
                     <div>
-                        <img src="assets/footer-1.svg" alt="socials">
+                        <a href="https://www.vk.com">
+                            <img src="assets/vk.svg" alt="socials">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="assets/instagram.svg" alt="socials">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="assets/facebook.svg" alt="socials">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -289,6 +297,9 @@
             </div>
         </div>
     </div>
+    <a class="footer__anchor" href="#header">
+        <img src="assets/up-arrow.svg" alt="arrow-up">
+    </a>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
